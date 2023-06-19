@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CFB35F8-B0FA-4C24-958F-B66C7F8AC0D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>My_Application</RootNamespace>
+    <AssemblyName>My_Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentInformation.Designer.cs">
+      <DependentUpon>AddStudentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionTestMarks.cs" />
+    <Compile Include="Behavioral_Design.cs" />
+    <Compile Include="Behavioral_Design_Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Behavioral_Design_Pattern.Designer.cs">
+      <DependentUpon>Behavioral_Design_Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creational_Design_Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creational_Design_Pattern.Designer.cs">
+      <DependentUpon>Creational_Design_Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSE_Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSE_Dept.Designer.cs">
+      <DependentUpon>CSE_Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cyber_Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cyber_Dept.Designer.cs">
+      <DependentUpon>Cyber_Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowStudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowStudentInformation.Designer.cs">
+      <DependentUpon>ShowStudentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Structural_Design_Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Structural_Design_Pattern.Designer.cs">
+      <DependentUpon>Structural_Design_Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SWE_Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWE_Dept.Designer.cs">
+      <DependentUpon>SWE_Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web_Dept.Designer.cs">
+      <DependentUpon>Web_Dept.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddStudentInformation.resx">
+      <DependentUpon>AddStudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Behavioral_Design_Pattern.resx">
+      <DependentUpon>Behavioral_Design_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creational_Design_Pattern.resx">
+      <DependentUpon>Creational_Design_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSE_Dept.resx">
+      <DependentUpon>CSE_Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyber_Dept.resx">
+      <DependentUpon>Cyber_Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ShowStudentInformation.resx">
+      <DependentUpon>ShowStudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Structural_Design_Pattern.resx">
+      <DependentUpon>Structural_Design_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWE_Dept.resx">
+      <DependentUpon>SWE_Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web_Dept.resx">
+      <DependentUpon>Web_Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
